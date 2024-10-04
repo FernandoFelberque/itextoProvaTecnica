@@ -12,27 +12,28 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3 
+        uses: actions/checkout@v3  
 
       - name: Setup Node.js
         uses: actions/setup-node@v3  
         with:
           node-version: '20'  
+
       - name: Install dependencies
         run: npm install
 
       - name: Run Cypress tests
         run: npm run cypress:run
 
-
+    
       - name: Generate Cypress HTML Report
         run: |
-          node ./startReportServer.js &  
+          node ./startReportServer.js &  # Executa o servidor em segundo plano
           sleep 5  # Aguarda o servidor iniciar
 
-
-      - name: Upload Cypress Report
-        uses: actions/upload-artifact@v4  
+   
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          name: cypress-report
-          path: TestReport/Report.html  
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: TestReport  
