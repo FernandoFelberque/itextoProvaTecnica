@@ -1,0 +1,15 @@
+[
+  {
+    "nomeUsuario": "QAteste1",
+    "email": "@.com",
+    "senha": "Senha@123",
+    "miniBiografia": "Oi eu sou o inválido"
+  },
+
+  {
+    "nomeUsuario": "QAteste2",
+    "email": "Qualidade@gmail.com",
+    "senha": "Senha@123",
+    "miniBiografia": "Oi eu sou o QA"
+  }
+]

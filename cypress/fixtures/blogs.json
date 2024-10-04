@@ -1,0 +1,15 @@
+[
+  {
+    "nomeBlog": "BobBlog2",
+    "url": "https://www.google.com.br",
+    "rss": "https://www.google.com.br",
+    "sobre": "Famoso Google"
+  },
+  
+  {
+    "nomeBlog": "BobBlog",
+    "url": "abcd",
+    "rss": "cdba",
+    "sobre": "nada"
+  }
+]
