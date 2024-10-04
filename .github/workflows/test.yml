@@ -12,34 +12,27 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3 
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  
         with:
-          node-version: '16'
-
+          node-version: '20'  
       - name: Install dependencies
         run: npm install
 
       - name: Run Cypress tests
         run: npm run cypress:run
 
-   
+
       - name: Generate Cypress HTML Report
         run: |
-          node ./startReportServer.js & 
+          node ./startReportServer.js &  
           sleep 5  # Aguarda o servidor iniciar
 
-  
+
       - name: Upload Cypress Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  
         with:
           name: cypress-report
           path: TestReport/Report.html  
-
-      - name: Upload Screenshots and Videos
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-assets
-          path: cypress/screenshots, cypress/videos
