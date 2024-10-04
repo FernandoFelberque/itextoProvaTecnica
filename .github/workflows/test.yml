@@ -3,7 +3,7 @@ name: Cypress Tests
 on:
   push:
     branches:
-      - ci
+      - main
   pull_request:
 
 jobs:
@@ -31,9 +31,20 @@ jobs:
           node ./startReportServer.js &  # Executa o servidor em segundo plano
           sleep 5  # Aguarda o servidor iniciar
 
-   
+    
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+
+      
+      - name: Rename Report.html to index.html
+        run: |
+          mv TestReport/Report.html TestReport/index.html
+
+  
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: TestReport  
+          publish_dir: TestReport 
