@@ -18,19 +18,30 @@ jobs:
         uses: actions/setup-node@v4  
         with:
           node-version: '20'  
+          
       - name: Install dependencies
         run: npm install
 
       - name: Run Cypress tests
         run: npm run cypress:run
 
-
       - name: Generate Cypress HTML Report
         run: |
           node ./startReportServer.js &  
-          sleep 5  # Aguarda o servidor iniciar
+          sleep 5  
+
+      - name: Rename Report.html to index.html
+        run: |
+          mv TestReport/Report.html TestReport/index.html
+
       - name: Upload Cypress Report
         uses: actions/upload-artifact@v4  
         with:
           name: cypress-report
-          path: TestReport/Report.html  
+          path: TestReport/index.html  
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./TestReport
