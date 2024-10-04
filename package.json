@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx run cypress"
+    "cypress:run": "cypress run",
+    "start-report": "node ./startReportServer.js"
   },
   "keywords": [],
   "author": "",
