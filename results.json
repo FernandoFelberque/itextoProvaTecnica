@@ -1,0 +1,233 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "118.0.5993.159",
+  "config": {
+    "baseUrl": "https://devall.com.br",
+    "projectRoot": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica",
+    "projectName": "itextoProvaTecnica",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica/cypress/downloads",
+    "env": {},
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalFetchPolyfill": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "experimentalSkipDomainInjection": null,
+    "experimentalJustInTimeCompile": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica",
+    "fixturesFolder": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica/cypress/fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "linux",
+    "pageLoadTimeout": 60000,
+    "port": 33547,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "/opt/hostedtoolcache/node/20.17.0/x64/bin/node",
+    "resolvedNodeVersion": "20.17.0",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica/cypress/screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica/cypress/support/e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica/cypress/videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Chrome",
+        "family": "chromium",
+        "majorVersion": "129",
+        "name": "chrome",
+        "path": "google-chrome",
+        "version": "129.0.6668.58"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Chromium",
+        "family": "chromium",
+        "majorVersion": "129",
+        "name": "chromium",
+        "path": "chromium-browser",
+        "version": "129.0.6668.0"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Firefox",
+        "family": "firefox",
+        "majorVersion": "130",
+        "name": "firefox",
+        "path": "firefox",
+        "version": "130.0.1"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "129",
+        "name": "edge",
+        "path": "microsoft-edge",
+        "version": "129.0.2792.52"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 118,
+        "name": "electron",
+        "path": "",
+        "version": "118.0.5993.159"
+      }
+    ],
+    "cypressBinaryRoot": "/home/runner/.cache/Cypress/13.15.0/Cypress/resources/app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "13.15.0",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "13.15.0",
+  "endedTestsAt": "2024-10-04T22:57:49.357Z",
+  "osName": "linux",
+  "osVersion": "Ubuntu - ",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2024-10-04T22:57:40.745Z",
+        "end": "2024-10-04T22:57:49.361Z",
+        "duration": 8616
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "/home/runner/work/itextoProvaTecnica/itextoProvaTecnica/cypress/e2e/testeDeCadastro.cy.js",
+        "fileExtension": ".js",
+        "fileName": "testeDeCadastro",
+        "name": "testeDeCadastro.cy.js",
+        "relative": "cypress/e2e/testeDeCadastro.cy.js"
+      },
+      "stats": {
+        "duration": 8618,
+        "endedAt": "2024-10-04T22:57:49.357Z",
+        "failures": 0,
+        "passes": 4,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-10-04T22:57:40.739Z",
+        "suites": 1,
+        "tests": 4
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3080,
+          "state": "passed",
+          "title": [
+            "CN001 Fluxo de Cadastro",
+            "CT001 Realizar cadastros com credenciais válidas e sem blog"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 1742,
+          "state": "passed",
+          "title": [
+            "CN001 Fluxo de Cadastro",
+            "CT002 Falhar em realizar cadastros com email inválido"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3225,
+          "state": "passed",
+          "title": [
+            "CN001 Fluxo de Cadastro",
+            "CT003 Realizar cadastros com credenciais válidas e com blog"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 544,
+          "state": "passed",
+          "title": [
+            "CN001 Fluxo de Cadastro",
+            "CT004 Cadastro com campos vazios"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2024-10-04T22:57:40.739Z",
+  "totalDuration": 8618,
+  "totalFailed": 0,
+  "totalPassed": 4,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 1,
+  "totalTests": 4
+}
