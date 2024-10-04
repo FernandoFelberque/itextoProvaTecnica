@@ -1,7 +1,6 @@
-# iTextoprovatecnica
+# iTextoProvaTecnica
 
-Este repositório contém testes automatizados utilizando o framework Cypress e documentação do processo de teste manual da barra de pesquisa e automáticos da função de cadastro.
-
+Este repositório contém testes automatizados utilizando o framework Cypress.
 ## Índice
 
 - [Descrição](#descrição)
@@ -14,7 +13,15 @@ Este repositório contém testes automatizados utilizando o framework Cypress e 
 
 ## Descrição
 
-O projeto tem como objetivo implementar testes automatizados para validar o cadastro de usuários. Os testes são escritos em JavaScript e utilizam a biblioteca Cypress para automação.
+O projeto tem como objetivo implementar testes para validar as funcionalidades de cadastro e pesquisa de usuários.
+
+- **Funcionalidade de Cadastro**: Inclui testes automatizados usando Cypress.
+
+- **Funcionalidade de Pesquisa**: Possui casos de teste escritos em Gherkin.
+
+Ambas as funcionalidades possuem documentação do plano de teste, com um cenário de teste para cada uma.
+
+Além disso, foi criado um GitHub Action que gera um relatório na gh-pages do projeto, facilitando o acompanhamento dos resultados dos testes.
 
 ## Tecnologias Utilizadas
 
